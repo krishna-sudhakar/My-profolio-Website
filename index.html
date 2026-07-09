@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Krishna Sudhakar — AI & Software Engineer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="starfield"></div>2qq3wewsa
+
+  <!-- Scroll Progress Bar -->
+  <div id="scroll-progress" class="scroll-progress-bar"></div>
+
+  <!-- Background Particle Canvas & Glow Orbs -->
+  <div class="bg-effects-container">
+    <div class="glow-orb orb-1"></div>
+    <div class="glow-orb orb-2"></div>
+    <div class="glow-orb orb-3"></div>
+    <canvas id="particle-canvas"></canvas>
+  </div>
+
+  <!-- Custom Animated Cursor -->
+  <div class="custom-cursor-dot" id="custom-cursor-dot"></div>
+  <div class="custom-cursor-outline" id="custom-cursor-outline"></div>
+
+  <header>
+    <div class="logo">KRISHNA SUDHAKAR</div>
+    <nav>
+      <ul>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+        <li><a href="#" id="open-chatbot" class="nav-link">Chatbot</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-content">
+      <div class="hero-eyebrow"><span class="dot"></span> SIGNAL ONLINE — OPEN TO SOFTWARE ENGINEERING ROLES</div>
+      <h1 class="hero-title">Krishna <span>Sudhakar</span> </h1>
+      <!-- Dynamic Typing Effect for Profession -->
+      <div class="profession-typing-wrap">
+        <span id="profession-typing" class="profession-text"></span><span class="typing-cursor">_</span>
+      </div>
+      <p class="hero-sub">Driven by curiosity and innovation, I enjoy building software that solves real-world problems. Passionate about Artificial Intelligence, Full-Stack Development, and creating scalable, user-focused applications through continuous learning and creativity.</p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary magnetic-btn">View Projects →</a>
+        <a href="#contact" class="btn btn-ghost magnetic-btn">Get in Touch</a>
+      </div>
+      <div class="waveform-wrap">
+        <svg viewBox="0 0 1200 80" preserveAspectRatio="none">
+          <path class="wave-path dim" d="M0,40 L60,40 L80,15 L100,65 L120,40 L200,40 L220,25 L240,55 L260,40 L400,40 L420,10 L440,70 L460,40 L600,40 L620,20 L640,60 L660,40 L800,40 L820,15 L840,65 L860,40 L1000,40 L1020,25 L1040,55 L1060,40 L1200,40" />
+          <path class="wave-path" d="M0,40 L100,40 L115,8 L130,72 L145,40 L280,40 L295,20 L310,60 L325,40 L460,40 L475,5 L490,75 L505,40 L640,40 L655,18 L670,62 L685,40 L820,40 L835,10 L850,70 L865,40 L1000,40 L1015,22 L1030,58 L1045,40 L1200,40" />
+        </svg>
+      </div>
+      <div class="scroll-cue">SCROLL</div>
+    </div>
+
+    <!-- Profile Image Container with Glow and Tilt effects -->
+    <div class="profile-stage reveal">
+      <div class="profile-tilt-card" id="profile-card">
+        <div class="profile-glow"></div>
+        <div class="profile-card-inner">
+          <img src="photo2.jpeg" alt="Krishna Sudhakar" class="profile-img" fetchpriority="high">
+          <div class="profile-border-line"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="laptop-stage">
+      <div class="laptop">
+        <div class="base">
+          <div class="face">
+            <div class="keyboard">
+              <!-- 4 rows x 12 keys -->
+              <script>
+                document.write('<span></span>'.repeat(48));
+              </script>
+            </div>
+            <div class="trackpad"></div>
+          </div>
+          <div class="edge"></div>
+        </div>
+
+        <div class="screen-hinge">
+          <div class="screen-back"></div>
+          <div class="screen-front">
+            <div class="glow"></div>
+            <div class="code-line" style="top:20px; width:120px;"></div>
+            <div class="code-line" style="top:34px; width:180px;"></div>
+            <div class="code-line" style="top:48px; width:90px;"></div>
+            <div class="code-line" style="top:62px; width:150px;"></div>
+            <div class="code-line" style="top:76px; width:110px;"></div>
+            <div class="code-line" style="top:90px; width:170px;"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <p class="caption"></p>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="section-inner">
+      <div class="section-tag">01 . About</div>
+      <h2 class="section-title reveal reveal-fade-up">A short description.</h2>
+      <div class="about-grid">
+        <div class="about-text reveal reveal-fade-left">
+          <p>Computer Science graduate with a strong interest in software development, AI, and problem-solving. Proficient in Python, JavaScript, C, MySQL, HTML, CSS, Data Structures, DBMS, and web development, with hands-on experience building practical applications. A quick learner with strong analytical and teamwork skills, eager to contribute to innovative projects and grow in Software Engineering, AI/ML, or Data Science roles.</p>
+        </div>
+        <div class="readouts reveal reveal-fade-right">
+          <div class="readout-card">
+            <div class="readout"><div class="val text-glow">8.7</div><div class="label">CGPA · BTech CSE</div></div>
+            <div class="readout"><div class="val text-glow">94%</div><div class="label">Class XII</div></div>
+            <div class="readout"><div class="val text-glow">3</div><div class="label">Major AI Projects</div></div>
+            <div class="readout"><div class="val text-glow">6</div><div class="label">Certifications</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="section-inner">
+      <div class="section-tag">02 · Skills</div>
+      <h2 class="section-title reveal reveal-zoom-in">Toolkit, calibrated.</h2>
+      <div class="skills-grid">
+        <div class="skill-group reveal reveal-fade-up">
+          <h3>Languages & Web</h3>
+          <div class="bar-row"><div class="bar-label"><span>Python</span><span class="pct">92%</span></div><div class="bar-track"><div class="bar-fill" data-level="92"></div></div></div>
+          <div class="bar-row"><div class="bar-label"><span>JavaScript</span><span class="pct">80%</span></div><div class="bar-track"><div class="bar-fill" data-level="80"></div></div></div>
+          <div class="bar-row"><div class="bar-label"><span>C</span><span class="pct">75%</span></div><div class="bar-track"><div class="bar-fill" data-level="75"></div></div></div>
+          <div class="bar-row"><div class="bar-label"><span>HTML / CSS / Bootstrap</span><span class="pct">85%</span></div><div class="bar-track"><div class="bar-fill" data-level="85"></div></div></div>
+        </div>
+        <div class="skill-group reveal reveal-fade-up" style="transition-delay: 0.1s;">
+          <h3>Databases</h3>
+          <div class="bar-row"><div class="bar-label"><span>MySQL</span><span class="pct">88%</span></div><div class="bar-track"><div class="bar-fill" data-level="88"></div></div></div>
+          <div class="bar-row"><div class="bar-label"><span>SQL</span><span class="pct">85%</span></div><div class="bar-track"><div class="bar-fill" data-level="85"></div></div></div>
+          <div class="bar-row"><div class="bar-label"><span>PostgreSQL</span><span class="pct">70%</span></div><div class="bar-track"><div class="bar-fill" data-level="70"></div></div></div>
+        </div>
+        <div class="skill-group reveal reveal-fade-up" style="transition-delay: 0.2s;">
+          <h3>Tools</h3>
+          <div class="bar-row"><div class="bar-label"><span>Git / GitHub</span><span class="pct">85%</span></div><div class="bar-track"><div class="bar-fill" data-level="85"></div></div></div>
+          <div class="bar-row"><div class="bar-label"><span>Antigravity</span><span class="pct">82%</span></div><div class="bar-track"><div class="bar-fill" data-level="82"></div></div></div>
+          <div class="bar-row"><div class="bar-label"><span>VS-code</span><span class="pct">80%</span></div><div class="bar-track"><div class="bar-fill" data-level="80"></div></div></div>
+          <div class="bar-row"><div class="bar-label"><span>Postman</span><span class="pct">80%</span></div><div class="bar-track"><div class="bar-fill" data-level="80"></div></div></div>
+          <div class="bar-row"><div class="bar-label"><span>React</span><span class="pct">80%</span></div><div class="bar-track"><div class="bar-fill" data-level="80"></div></div></div>
+        </div>
+      </div>
+      <div class="softskills reveal reveal-fade-up">
+        <div class="chip magnetic-btn">Communication</div>
+        <div class="chip magnetic-btn">Teamwork & Collaboration</div>
+        <div class="chip magnetic-btn">Leadership</div>
+        <div class="chip magnetic-btn">Problem Solving</div>
+        <div class="chip magnetic-btn">Adaptability</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience">
+    <div class="section-inner">
+      <div class="section-tag">03 · Experience</div>
+      <h2 class="section-title reveal reveal-fade-left">Field log.</h2>
+      <div class="reveal reveal-fade-right">
+        <div class="log-entry hover-lift">
+          <div class="log-date text-glow">JUN 2022</div>
+          <div>
+            <div class="log-role">Python Programming Intern</div>
+            <div class="log-org">RiverTech IT Solutions — Kochi, Kerala</div>
+            <ul>
+              <li>Completed a short-term internship focused on core Python programming concepts and software development fundamentals.</li>
+              <li>Applied Python libraries and problem-solving techniques to build efficient, working solutions.</li>
+              <li>Gained hands-on experience in debugging, testing, and real-world application lifecycle workflows.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="section-inner">
+      <div class="section-tag">04 · Projects</div>
+      <h2 class="section-title reveal reveal-zoom-in">Three signals, decoded.</h2>
+      <div class="projects-grid">
+
+        <div class="project-card reveal reveal-fade-up tilt-card">
+          <div class="card-glow"></div>
+          <img src="neurosense.jpeg" alt="NeuroSense project screenshot" class="project-img">
+          <svg class="mini-wave" viewBox="0 0 300 32" preserveAspectRatio="none"><path d="M0,16 L40,16 L50,4 L60,28 L70,16 L120,16 L130,8 L140,24 L150,16 L200,16 L210,4 L220,28 L230,16 L300,16"/></svg>
+          <span class="project-date">MAY 2026</span>
+          <div class="project-title text-glow">NeuroSense</div>
+          <p style="color:var(--text-dimmer); font-size:13px; margin-bottom:14px;">AI-powered real-time stress & productivity system</p>
+          <ul>
+            <li>Engineered a real-time multimodal stress detection system analyzing video, audio, and text using FastAPI, React, DeepFace, MediaPipe, and Google Gemini.</li>
+            <li>Built multimodal pipelines for facial emotion recognition, speech-based emotion analysis, and contextual sentiment detection.</li>
+            <li>Shipped an interactive dashboard with real-time analytics and personalized wellness recommendations.</li>
+          </ul>
+          <div class="tag-row"><span class="tag">FastAPI</span><span class="tag">React</span><span class="tag">DeepFace</span><span class="tag">MediaPipe</span><span class="tag">Gemini</span></div>
+          <a href="neurosense.html" class="project-btn">View Project →</a>
+        </div>
+
+        <div class="project-card reveal reveal-fade-up tilt-card" style="transition-delay: 0.1s;">
+          <div class="card-glow"></div>
+          <img src="music.jpeg" alt="Emote-Tune project screenshot" class="project-img">
+          <svg class="mini-wave" viewBox="0 0 300 32" preserveAspectRatio="none"><path d="M0,16 L40,16 L50,4 L60,28 L70,16 L120,16 L130,8 L140,24 L150,16 L200,16 L210,4 L220,28 L230,16 L300,16"/></svg>
+          <span class="project-date">OCT 2025</span>
+          <div class="project-title text-glow">Emote-Tune</div>
+          <p style="color:var(--text-dimmer); font-size:13px; margin-bottom:14px;">Emotion-based music recommendation system</p>
+          <ul>
+            <li>Built a web-based system that recommends songs based on users' facial expressions and detected emotional states.</li>
+            <li>Implemented facial emotion recognition in Python, integrated with an HTML, CSS, JavaScript, and PHP front end.</li>
+            <li>Designed a real-time capture-to-recommendation pipeline mapping camera input to personalized playlists.</li>
+          </ul>
+          <div class="tag-row"><span class="tag">Python</span><span class="tag">PHP</span><span class="tag">JavaScript</span><span class="tag">Computer Vision</span></div>
+          <a href="emote-tune.html" class="project-btn">View Project →</a>
+        </div>
+
+        <div class="project-card reveal reveal-fade-up tilt-card" style="transition-delay: 0.2s;">
+          <div class="card-glow"></div>
+          <img src="gym.jpeg" alt="Gym Management System screenshot" class="project-img">
+          <svg class="mini-wave" viewBox="0 0 300 32" preserveAspectRatio="none"><path d="M0,16 L40,16 L50,4 L60,28 L70,16 L120,16 L130,8 L140,24 L150,16 L200,16 L210,4 L220,28 L230,16 L300,16"/></svg>
+          <span class="project-date">MAR 2025</span>
+          <div class="project-title text-glow">Gym Management System</div>
+          <p style="color:var(--text-dimmer); font-size:13px; margin-bottom:14px;">Trainer, member & task management platform</p>
+          <ul>
+            <li>Built a web-based management system in PHP, MySQL, HTML, CSS, and JavaScript to manage trainers, users, and tasks.</li>
+            <li>Designed a structured MySQL schema for secure storage and reliable retrieval of user and task data.</li>
+            <li>Streamlined trainer–user workflows, improving task assignment, tracking, and overall usability.</li>
+          </ul>
+          <div class="tag-row"><span class="tag">PHP</span><span class="tag">MySQL</span><span class="tag">HTML/CSS</span><span class="tag">JavaScript</span></div>
+          <a href="gym-management.html" class="project-btn">View Project →</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="education">
+    <div class="section-inner">
+      <div class="section-tag">05 · Education</div>
+      <h2 class="section-title reveal reveal-fade-left">Foundation readings.</h2>
+      <div class="timeline-container">
+        <div class="timeline-scroll-line" id="timeline-line"></div>
+        <div class="timeline reveal reveal-fade-right">
+          <div class="tl-item hover-lift">
+            <div class="tl-degree text-glow">BTech in Computer Science and Engineering</div>
+            <div class="tl-school">College of Engineering, Trikaripur — KTU</div>
+            <div class="tl-meta">JUL 2026 · CGPA 8.7</div>
+          </div>
+          <div class="tl-item hover-lift">
+            <div class="tl-degree text-glow">Higher Secondary (Class 12)</div>
+            <div class="tl-school">GGHSS Payyanur</div>
+            <div class="tl-meta">MAY 2022 · 94%</div>
+          </div>
+          <div class="tl-item hover-lift">
+            <div class="tl-degree text-glow">SSLC (Class 10)</div>
+            <div class="tl-school">St Mary's GHS, Payyanur</div>
+            <div class="tl-meta">APR 2020 · 95%</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CERTIFICATIONS -->
+  <section id="certifications">
+    <div class="section-inner" style="padding-top:0;">
+      <div class="section-tag">06 · Certifications</div>
+      <h2 class="section-title reveal reveal-zoom-in">Verified signal sources.</h2>
+      <div class="cert-list reveal reveal-fade-up">
+        
+
+      <a href="https://coursera.org/verify/Z1P3QA6TVZUS" target="_blank" class="cert cert-link hover-lift">
+        <span class="cert-icon">✓</span>
+        <span>Introduction to Git and GitHub — Google</span>
+      </a>
+
+      <a href="https://your-python-certificate-link" target="_blank" class="cert cert-link hover-lift">
+        <span class="cert-icon">✓</span>
+        <span>Basics of Python Programming — Infosys</span>
+      </a>
+
+      <a href="https://coursera.org/verify/N37RI18RXE2C" target="_blank" class="cert cert-link hover-lift">
+        <span class="cert-icon">✓</span>
+        <span>Programming with JavaScript — Meta</span>
+      </a>
+
+      <a href="https://your-ai-certificate-link" target="_blank" class="cert cert-link hover-lift">
+        <span class="cert-icon">✓</span>
+        <span>AI for Beginners — HP Life</span>
+      </a>
+
+      <a href="https://your-accenture-certificate-link" target="_blank" class="cert cert-link hover-lift">
+        <span class="cert-icon">✓</span>
+        <span>Digital Skills — Accenture</span>
+      </a>
+
+      <a href="https://your-workshop-certificate-link" target="_blank" class="cert cert-link hover-lift">
+        <span class="cert-icon">✓</span>
+        <span>Self-Driving Electric Vehicles Workshop — Techmaghi, KSUM, IEDC CET & IIT Palakkad</span>
+      </a>
+
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact">
+    <div class="section-inner">
+      <div class="section-tag">07 · Contact</div>
+      <h2 class="section-title reveal reveal-fade-up">Let's build something<br>that reads the signal right.</h2>
+      
+      <div class="contact-grid">
+        <div class="contact-links reveal reveal-fade-left">
+          <a href="mailto:krishnasudhakar79@gmail.com" class="magnetic-btn">✉ krishnasudhakar79@gmail.com</a>
+          <a href="tel:+919447506917" class="magnetic-btn">☎ +91 9447506917</a>
+          <a href="https://linkedin.com/in/krishna-sudhakar" target="_blank" rel="noopener" class="magnetic-btn">↗ linkedin.com/in/krishna-sudhakar</a>
+          <a href="https://github.com/krishna-sudhakar" target="_blank" rel="noopener" class="magnetic-btn">↗ github.com/krishna-sudhakar</a>
+        </div>
+
+        <!-- Modern Glassmorphic Contact Form with animated input fields -->
+        <div class="contact-form-container reveal reveal-fade-right">
+          <form id="portfolio-contact-form" class="contact-form">
+            <div class="form-group">
+              <input type="text" id="form-name" required placeholder=" ">
+              <label for="form-name">Name</label>
+              <span class="input-focus-line"></span>
+            </div>
+            <div class="form-group">
+              <input type="email" id="form-email" required placeholder=" ">
+              <label for="form-email">Email Address</label>
+              <span class="input-focus-line"></span>
+            </div>
+            <div class="form-group">
+              <textarea id="form-message" required placeholder=" " rows="4"></textarea>
+              <label for="form-message">Your Message</label>
+              <span class="input-focus-line"></span>
+            </div>
+            <button type="submit" class="btn btn-primary btn-submit magnetic-btn">
+              <span>Send Signal</span>
+              <span class="btn-ripple-container"></span>
+            </button>
+          </form>
+          
+          <div class="form-success-message" id="form-success">
+            <div class="success-icon">✓</div>
+            <h3>Signal Transmitted!</h3>
+            <p>Thank you for reaching out. Krishna will decode your message and respond shortly.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>© 2026 KRISHNA SUDHAKAR — KERALA, INDIA — BUILT WITH SIGNAL & CODE</footer>
+  </section>
+
+  <!-- Back to Top Button -->
+  <button id="back-to-top" class="back-to-top-btn" title="Back to top">
+    <svg viewBox="0 0 24 24"><path d="M4 12l1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"/></svg>
+  </button>
+
+  <!-- AI Robot Helper Widget -->
+  <div  id="Chatbot" class="robot-widget-container">
+    <div class="robot-widget" id="robot-toggle" title="Ask my AI helper!">
+      <div class="robot-head">
+        <div class="robot-ears"></div>
+        <div class="robot-eyes">
+          <div class="eye left"></div>
+          <div class="eye right"></div>
+        </div>
+        <div class="robot-mouth"></div>
+      </div>
+      <div class="robot-body-glow"></div>
+    </div>
+    
+    <div class="robot-chat-window" id="robot-chat">
+      <div class="chat-header">
+        <div class="chat-header-avatar">🤖</div>
+        <div class="chat-header-info">
+          <h4>Aegis-v1.0</h4>
+          <p><span class="status-dot"></span> Online Assistant</p>
+        </div>
+        <button class="chat-close" id="chat-close">&times;</button>
+      </div>
+      <div class="chat-messages" id="chat-messages">
+        <div class="chat-bubble bot-message">
+          Hello! I'm Aegis, Krishna's AI assistant. Ask me anything about his credentials, projects, or background!
+        </div>
+      </div>
+      <div class="chat-suggestions">
+        <button class="suggestion-chip" data-question="skills">What is his tech stack?</button>
+        <button class="suggestion-chip" data-question="projects">Tell me about his AI projects.</button>
+        <button class="suggestion-chip" data-question="contact">How can I contact him?</button>
+      </div>
+      <div class="chat-input-area">
+        <input type="text" id="chat-input" placeholder="Ask a question..." autocomplete="off">
+        <button id="chat-send">Send</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
