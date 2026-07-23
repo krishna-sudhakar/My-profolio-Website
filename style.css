@@ -2011,3 +2011,337 @@ h2.section-title {
     display: none;
   }
 }
+
+/* =========================================
+   MOBILE RESPONSIVE DESIGN
+========================================= */
+
+@media (max-width: 768px) {
+
+  /* Prevent horizontal scrolling */
+  html,
+  body {
+      width: 100%;
+      overflow-x: hidden;
+  }
+
+  /* Header */
+  header {
+      padding: 18px 20px;
+      flex-direction: column;
+      gap: 20px;
+  }
+
+  .logo {
+      font-size: 18px;
+      text-align: center;
+  }
+
+  nav ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 12px;
+  }
+
+  nav ul li a {
+      font-size: 11px;
+  }
+
+  /* Sections */
+  .section-inner {
+      width: 100%;
+      padding: 70px 20px;
+  }
+
+  /* Hero */
+  .hero {
+      min-height: auto;
+      padding: 100px 20px 60px;
+      display: flex;
+      flex-direction: column;
+  }
+
+  .hero-content {
+      width: 100%;
+      text-align: center;
+  }
+
+  .hero-eyebrow {
+      font-size: 10px;
+      line-height: 1.6;
+  }
+
+  .hero-title {
+      font-size: clamp(42px, 12vw, 70px);
+      line-height: 1;
+      word-break: normal;
+  }
+
+  .profession-typing-wrap {
+      font-size: 18px;
+      min-height: 35px;
+  }
+
+  .hero-sub {
+      font-size: 14px;
+      line-height: 1.7;
+      max-width: 100%;
+  }
+
+  /* Buttons */
+  .hero-cta {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+  }
+
+  .hero-cta .btn {
+      width: 100%;
+      max-width: 280px;
+      text-align: center;
+  }
+
+  /* Hide large decorative laptop on phone */
+  .laptop-stage {
+      display: none;
+  }
+
+  /* Profile image */
+  .profile-stage {
+      margin: 50px auto 0;
+      width: 80%;
+      max-width: 300px;
+  }
+
+  .profile-img {
+      width: 100%;
+      height: auto;
+  }
+
+  /* Waveform */
+  .waveform-wrap {
+      width: 100%;
+      overflow: hidden;
+  }
+
+  /* About */
+  .about-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+  }
+
+  .about-text p {
+      font-size: 15px;
+      line-height: 1.8;
+  }
+
+  /* Readout cards */
+  .readout-card {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 15px;
+  }
+
+  /* Skills */
+  .skills-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+  }
+
+  .skill-group {
+      width: 100%;
+  }
+
+  .softskills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+  }
+
+  .chip {
+      font-size: 12px;
+      padding: 10px 14px;
+  }
+
+  /* Experience */
+  .log-entry {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+  }
+
+  .log-date {
+      font-size: 14px;
+  }
+
+  .log-entry ul {
+      padding-left: 20px;
+  }
+
+  .log-entry li {
+      font-size: 14px;
+      line-height: 1.7;
+  }
+
+  /* Projects */
+  .projects-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+  }
+
+  .project-card {
+      width: 100%;
+  }
+
+  .project-img {
+      width: 100%;
+      height: auto;
+  }
+
+  .project-card li {
+      font-size: 14px;
+      line-height: 1.7;
+  }
+
+  .tag-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+  }
+
+  /* Education */
+  .timeline {
+      padding-left: 20px;
+  }
+
+  .tl-degree {
+      font-size: 17px;
+      line-height: 1.4;
+  }
+
+  .tl-school,
+  .tl-meta {
+      font-size: 13px;
+      line-height: 1.6;
+  }
+
+  /* Certifications */
+  .cert-list {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+  }
+
+  .cert {
+      font-size: 13px;
+      line-height: 1.5;
+      padding: 15px;
+  }
+
+  /* Contact */
+  .contact-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 35px;
+  }
+
+  .contact-links {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+  }
+
+  .contact-links a {
+      font-size: 13px;
+      word-break: break-word;
+  }
+
+  /* Form */
+  .contact-form-container {
+      width: 100%;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+      width: 100%;
+      font-size: 16px;
+  }
+
+  /* Footer */
+  footer {
+      font-size: 10px;
+      line-height: 1.6;
+      text-align: center;
+      padding: 25px 15px;
+  }
+
+  /* Hide custom cursor on touch devices */
+  .custom-cursor-dot,
+  .custom-cursor-outline {
+      display: none;
+  }
+
+  /* Chatbot */
+  .robot-widget-container {
+      right: 15px;
+      bottom: 15px;
+  }
+
+  .robot-chat-window {
+      width: calc(100vw - 30px);
+      max-width: 360px;
+      right: 0;
+  }
+
+  /* Back to top */
+  .back-to-top-btn {
+      right: 15px;
+      bottom: 85px;
+  }
+}
+@media (max-width: 480px) {
+
+  .section-title {
+      font-size: 32px;
+      line-height: 1.2;
+  }
+
+  .hero-title {
+      font-size: 42px;
+  }
+
+  .hero-eyebrow {
+      font-size: 9px;
+  }
+
+  .readout-card {
+      grid-template-columns: 1fr 1fr;
+  }
+
+  .val {
+      font-size: 28px;
+  }
+
+  .label {
+      font-size: 10px;
+  }
+
+  .project-title {
+      font-size: 24px;
+  }
+
+  .chat-suggestions {
+      overflow-x: auto;
+      display: flex;
+      gap: 8px;
+  }
+
+  .suggestion-chip {
+      white-space: nowrap;
+  }
+}
